@@ -7,7 +7,7 @@ class ColorForeground:
         @is_dark_mode = is_dark_mode
     end
 
-foreground = ColorForeground.new("Accept", 10, 20)
+darkForeground = ColorForeground.new("Accept", 10, 20, "blue", True)
 def draw_button(label_text, x, y, foreground_color, is_dark_mode)
     if is_dark_mode
       # darken foreground color for dark mode
