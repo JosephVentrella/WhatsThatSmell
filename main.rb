@@ -4,7 +4,7 @@ class ColorForeground:
         @x = x
         @y = y
         @foreground_color = foreground_color
-        @is_dark_mode
+        @is_dark_mode = is_dark_mode
     end
 
 foreground = ColorForeground.new("Accept", 10, 20)
