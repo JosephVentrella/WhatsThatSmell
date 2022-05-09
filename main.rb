@@ -7,12 +7,12 @@ class ColorForeground:
         @is_dark_mode = is_dark_mode
     end
 
-darkForeground = ColorForeground.new("Accept", 10, 20, 50 - 10, '#111111')
+foreground = ColorForeground.new("Accept", 10, 20, 50 - 10, '#111111')
 def draw_button(darkForeground)
-    if darkForeground.is_dark_mode
+    if foreground.is_dark_mode
       # darken foreground color for dark mode
 
-      paint(darkForeground)
+      paint(foreground)
     else
       # lighten foreground color for non-dark mode
       lightForeground = ColorForeground.new("Accept", 10, 20, 50 + 10, '#E0E0E0')
